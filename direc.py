@@ -1,0 +1,18 @@
+import os
+def create_directory(directory_path):
+    # Check if the directory already exists
+    if os.path.exists(directory_path):
+        print(f"Directory '{directory_path}' already exists.")
+    else:
+        try:
+            # Create the directory
+            os.mkdir(directory_path)
+            print(f"Directory '{directory_path}' created successfully.")
+        except OSError as error:
+            print(f"Failed to create directory '{directory_path}': {error}")
+
+# Specify the directory path you want to create
+for i in range(32,46,1):
+    new_directory_path = 'C:/Users/lovek/Desktop/wedisk/hi/{}/merged'.format(i)
+    # Call the function to create the directory
+    create_directory(new_directory_path)
