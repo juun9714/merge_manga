@@ -25,8 +25,11 @@ def merge_images(directory):
         count+=1
 
 
-for i in range(32,46,1):
-    directory_path = 'C:/Users/lovek/Desktop/wedisk/hi/'+str(i)
-    # Call the function to rename files
-    print(directory_path)
-    merge_images(directory_path)
+# for i in range(31,46,1):
+#     directory_path = 'C:/Users/lovek/Desktop/wedisk/hi/'+str(i)
+#     # Call the function to rename files
+#     print(directory_path)
+#     merge_images(directory_path)
+
+directory_path = 'C:/Users/lovek/Desktop/wedisk/hi/31'
+merge_images(directory_path)
